@@ -149,7 +149,7 @@ bot.sendMessage(channel_id, str(print_jobs))
 
 #scheduler.add_job(send_links, 'cron', day_of_week=0, hour=9, minute=30, second=0, id='alarm_basic')
 # scheduler.add_job(send_menu1, "cron", args=[base_1], hour='*/1', id='alarm_resend_1')
-# scheduler.add_job(send_menu1, "cron", args=[base_2], hour='*/1', id='alarm_resend_2')
+# scheduler.add_job(send_menu2, "cron", args=[base_2], hour='*/1', id='alarm_resend_2')
 # scheduler.pause_job(job_id='alarm_resend_1')
 # scheduler.pause_job(job_id='alarm_resend_2')
 scheduler.add_job(send_links, 'cron', day_of_week=1, minute='*/5', second=0, id='alarm_basic')
